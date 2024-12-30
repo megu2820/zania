@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:3000/api # For the frontend to know where the mock API is
+    volumes:
+      - ./src:/app/src
+    networks:
+      - frontend_network
+    command: npm start # Start the React app
+
+networks:
+  frontend_network:
+    driver: bridge
