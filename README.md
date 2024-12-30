@@ -58,6 +58,10 @@ cd zania
 npm install
 npm start
 
+It would look something like: 
+
+![image](https://github.com/user-attachments/assets/52697390-b9bb-4c95-9041-d8f87b044409)
+
 ### Frontend Architecture
 As the Frontend Developer, I have set up the application structure to ensure scalability, maintainability, and ease of collaboration.
 
